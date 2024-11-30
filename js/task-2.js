@@ -18,7 +18,7 @@ class Storage {
   removeItem(itemToRemove) {
     const itemIndex = this.#items.indexOf(itemToRemove);
     if (itemIndex > -1) {
-      this.#items.splice(this.#items.itemIndex, 1);
+      this.#items.splice(itemIndex, 1);
     } else console.log(`The ${itemToRemove} does not exist in the storage`);
   }
 }
